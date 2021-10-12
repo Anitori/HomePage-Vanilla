@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad de Congreso: Alumnado</title>
+    <link href="../styles/index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/05fa8b8fbe.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/b05ae7973d.js"></script>
+    <link href="../img/icon.png" rel="icon" type="image/png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body id="body-sistemas">
+    <img src="../img/fondo1.jpg" id="img2" alt="logo-de-fondo">
+    <header id="barra">
+        <nav id="nav">
+            <a href="https://www.ucongreso.edu.ar/" target="blank"><img id="img" src="../img/logouc.png" alt="logo-uc"></a>
+            <ul id="lista">
+                <li class="lista"><a href="../index.html">Inicio</a></li>
+                <li class="lista"> <a href="calendario.html">Alumnado</a></li>
+                <li class="lista">Contactos</li>
+                <li class="lista"><a href="sistemas.html">Sistemas</a></li>
+                <li class="lista">Tesorería</li>
+                <li class="lista"><a href=facultades.html>Facultades</a></li>
+                <li class="lista2">Nuevos Postulantes</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mt-5">
+            <h1>Alumnos</h1>
+            <input type="text" id="formulario" class="form-control">
+            <br>
+            <button class="btn btn-info mb-2"id="boton">Buscar</button>
+            <ul id="resultado">
+                
+            </ul>
+        </div>
+    </main>
+    
+
+
+
+
+
+    <div id="footerContainer">
+        <footer id="footer3">
+            <ul id="listRedes">
+
+                <li class="listRedes2"><a href="https://www.instagram.com/ucongresoeste/" target="blank" class="iconos"><i class="fa fa-instagram" aria-hidden="true"></i>
+                </a></li>
+                <li class="listRedes2"><a href="https://www.facebook.com/ucongresoeste" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i>
+                </a></li>
+                <li class="listRedes2"><a href="https://drive.google.com/drive/my-drive" target="blank"><i class="fab fa-google-drive"></i>
+                </a></li>
+                <li class="listRedes2"><a href="https://mail.google.com/mail/u/0/" target="blank"><i class="fa fa-envelope" aria-hidden="true"></i>
+                </a></li>
+                <li class="listRedes2"><i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </li>
+            </ul>
+         
+         </footer>
+    </div>
+
+    <script>
+        const productos = [
+            {nombre: 'Alumno 1 | 12345678 | Abogacía', DNI: 12345678},
+            {nombre: 'Alumno 2 | 12345678 | Abogacía', DNI: 12345678},
+            {nombre: 'Alumno 3 | 12345678 | Abogacía', DNI: 12345678},
+            {nombre: 'Alumno 4 | 12345678 | Abogacía', DNI: 12345678},
+            {nombre: 'Alumno 5 | 12345678 | Abogacía', DNI: 12345678},
+            {nombre: 'Alumno 6 | 12345678 | Abogacía', DNI: 12345678},
+            {nombre: 'Alumno 7 | 12345678 | Abogacía', DNI: 12345678},
+            {nombre: 'Alumno 8 | 12345678 | Abogacía', DNI: 12345678},
+            {nombre: 'Alumno 9 | 12345678 | Abogacía', DNI: 12345678},
+            {nombre: 'Alumno 10 | 12345678 | Abogacía', DNI: 12345678},
+            {nombre: 'Alumno 11 | 12345678 | Abogacía', DNI: 12345678},
+            
+        ]
+        const formulario = document.querySelector('#formulario');
+        const boton = document.querySelector('#boton');
+        const resultado = document.querySelector('#resultado');
+        const filtrar = ()=>{
+            // console.log(formulario.value);
+            resultado.innerHTML = '';
+
+            const texto = formulario.value.toLowerCase();
+
+            for(let producto of productos){
+                let nombre = producto.nombre.toLowerCase();
+                if(nombre.indexOf(texto) !== -1){
+                  resultado.innerHTML += `
+                     <li>${producto.nombre} - DNI: ${producto.DNI}</li>
+                  `
+                  
+                }
+            }
+            if(resultado.innerHTML ===''){
+                resultado.innerHTML += `
+                <li> Alumno no encontrado...</li>
+                `
+            }         
+        }
+        boton.addEventListener('click', filtrar)
+        formulario.addEventListener('keyup',filtrar)
+
+        filtrar();
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+*{
+    font-family: 'Nunito', sans-serif;
+   
+   }
+   
+   
+   #bar {
+       font-size: 25px;
+       /* display: flex; */
+       /* flex-direction: column; */
+       /* justify-content: center;
+       flex-wrap: wrap;
+       margin: 25px; */
+   }
+   
+   .progress{
+   
+       display:flex;
+       position: relative;
+       left: 20px;
+       font-size: 40px;
+       top: 20px;
+       width: 96%;
+       margin: 15px;
+       
+   
+   }
+   
+   #perkin {
+       background-color: red;
+   }
+   
+   .carrera {
+       font-size: 18px;
+       padding: 0 10px 0 5px;
+       font-weight: bold;
+   }
+   
+   h6{
+       color: white;
+       font-weight: bold;
+       top: 4px;
+       position: relative;
+   }
