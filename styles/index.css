@@ -105,6 +105,16 @@ i:hover{
     border: 1px solid white;
     
 }
+
+#containerMainZz:hover{
+    border-left: solid 10px orange;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid white;
+    
+}
+
+
 #containerMain3:hover{
     border-left: solid 10px orange;
     transition-duration: 1s;
@@ -145,10 +155,8 @@ i:hover{
 }
 
 #containerMain5:hover{
-    border-left: solid 10px orange;
     transition-duration: 1s;
     background-color: rgba(0, 0, 0, 0.6);
-    border: 1px solid white;  
 }
 
 #containerMainF:hover{
@@ -568,6 +576,46 @@ i:hover{
     border-left: solid 10px white;
     transition-duration: 1s;
 }
+
+#containerMainZz {
+    width: 700px;
+    height: 100px;
+    background-color: var(--main-color);
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-left: 25px;
+    font-size: 35px;
+    padding: 10px;
+    box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.3);
+    opacity: 90%;
+    text-align: left;
+    position: absolute;
+    border-left: solid 10px white;
+    transition-duration: 1s;
+}
+
+input{
+    color: black;
+}
+
+
+.asd{
+    
+    background-color: #7BA839 !important;
+    border: solid 1px rgb(82, 77, 77) !important
+    ;
+}
+
+#submit{
+    font-size: 35px;
+}
+
+#form{
+    font-size: 40px;
+    margin-top: 150px;
+    margin-left: 20px;
+    width: 500px;
+}
 #aulas2{
     line-height: 32px;
     margin-top: 10px;
@@ -721,7 +769,7 @@ i:hover{
 
 #containerMain5 {
     width: 280px;
-    height: 110px;
+    height: 400px;
     background-color: var(--main-color);
     border-radius: 25px;
     margin-top: 390px;
