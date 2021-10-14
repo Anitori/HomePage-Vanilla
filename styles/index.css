@@ -427,7 +427,6 @@ i:hover{
     height: 1200px;
     color: black;
     font-size: 50px;
-    border: 1px solid black; 
 }
 
 #fondoMain{
@@ -578,12 +577,13 @@ i:hover{
 }
 
 #containerMainZz {
+    position: relative;
+    left: 20px;
     width: 700px;
     height: 100px;
     background-color: var(--main-color);
-    border-radius: 25px;
-    margin-top: 40px;
-    margin-left: 25px;
+    border-radius: 0px;
+    margin-top: 20px;
     font-size: 35px;
     padding: 10px;
     box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.3);
@@ -592,6 +592,15 @@ i:hover{
     position: absolute;
     border-left: solid 10px white;
     transition-duration: 1s;
+}
+
+#form{
+    position: absolute;
+    left: 20px;
+    font-size: 40px;
+    margin-top: 150px;
+    width: 500px;
+    height: 300px;
 }
 
 input{
@@ -610,12 +619,7 @@ input{
     font-size: 35px;
 }
 
-#form{
-    font-size: 40px;
-    margin-top: 150px;
-    margin-left: 20px;
-    width: 500px;
-}
+
 #aulas2{
     line-height: 32px;
     margin-top: 10px;
