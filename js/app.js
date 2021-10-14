@@ -231,33 +231,24 @@ let ver = document.getElementById("btnSave").addEventListener("click", (e) => {
             <p id="pMainX">
                 <h2>2020 (2do semestre) </h2>
                 <ul id="aulasX">
-
-                    
                     <li><a href=" " target="blank">Psicología</a></li>
-   
-
                 </ul>
             </p>
         </div>
-
 
         <div id="containerMainZ">
             <p id="pMainZ">
                 <h2>2020 (1er semestre) </h2>
                 <ul id="aulasZ">
-                    
-                    <li class="nashe"><a href=" " target="blank">‎      ‏‏‎Psicología</a></li>
-                    
+                    <li class="nashe"><a href=" " target="blank">‎      ‏‏‎Psicología</a></li>   
             </p>
         </div>
 
         <div id="containerMainNew">
             <p id="pMainNew">
                 <h2>2020 (1er semestre) </h2>
-                <ul id="aulasZ">
-                    
-                    <li class="nashe"><a href=" " target="blank">‎      ‏‏‎Psicología</a></li>
-                    
+                <ul id="aulasZ"> 
+                    <li class="nashe"><a href=" " target="blank">‎      ‏‏‎Psicología</a></li> 
                 </ul>
             </p>
         </div>
@@ -339,23 +330,16 @@ let ver = document.getElementById("btnSave").addEventListener("click", (e) => {
             <p id="pMainX">
                 <h2>2020 (2do semestre) </h2>
                 <ul id="aulasX">
-
-                    
                     <li><a href=" " target="blank">Psicología</a></li>
-   
-
                 </ul>
             </p>
         </div>
 
-
         <div id="containerMainZ">
             <p id="pMainZ">
                 <h2>2020 (1er semestre) </h2>
-                <ul id="aulasZ">
-                    
-                    <li class="nashe"><a href=" " target="blank">‎      ‏‏‎Psicología</a></li>
-                    
+                <ul id="aulasZ">   
+                    <li class="nashe"><a href=" " target="blank">‎      ‏‏‎Psicología</a></li>   
             </p>
         </div>
 
@@ -363,9 +347,7 @@ let ver = document.getElementById("btnSave").addEventListener("click", (e) => {
             <p id="pMainNew">
                 <h2>2020 (1er semestre) </h2>
                 <ul id="aulasZ">
-                    
                     <li class="nashe"><a href=" " target="blank">‎      ‏‏‎Psicología</a></li>
-                    
                 </ul>
             </p>
         </div>
@@ -416,41 +398,3 @@ let ver = document.getElementById("btnSave").addEventListener("click", (e) => {
 
     }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Funcion que me lo agregue al storage
-
-const agregarDatosDeFormularioAlStorage = (object) => {
-    datos.push(object)
-    console.log(datos)
-}
-
-//Guardar en base de datos
-
-const guardarEnBaseDeDatos = () => {
-    let dato = verificarLista()
-    localStorage.setItem("datos", JSON.stringify(lista))
-}
-
-
-
-
-// if (document.getElementById("name").value == "elexicon" && document.getElementById("password").value == "elexicon"){
-//     const div = document.querySelector(".info");
-//     div.innerHTML = "";
-
-// } else (document.getElementById("name").value != "elexicon" && document.getElementById("password").value != "elexicon");{
-//     const div = document.querySelector(".main2");
-//     div.innerHTML = "<strong> Contraseña Inválida </strong>"
