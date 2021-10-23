@@ -3,32 +3,21 @@
     font-family: 'Nunito', sans-serif;
     color: white;
     box-sizing: border-box;
+    
 }
+
 :root{
     /* --main-color:  rgb(80, 184,72); */
     /* --main-color: rgba(172, 255, 47, 0.692); */
     --main-color: #7BA839;
 }
+
 ::-webkit-scrollbar {  /*me elimina el formato del scroll*/
     display: none;
 }
 
 /* SECTOR HOVER */
 
-#texto2:hover{
-    color: black;
-    transition: 1s;
-    border: 2px white solid;
-    border-right: 15px white solid;
-}
-#tittle:hover{
-    background-color:rgba(255, 255, 255, 0.7);
-    color: black;
-    transition: 1s;
-    border: 2px #7BA839 solid;
-    border-right: 15px #7BA839 solid;
-    width: 420px;
-}
 h2 {
     margin-left: 10px;
     border-bottom: solid 2px rgb(255, 255, 255);
@@ -36,7 +25,8 @@ h2 {
 
 a:hover {
     color:black !important;
-    font-weight: bold;  
+    font-weight: bold;
+    
 }
 
 a{
@@ -45,16 +35,15 @@ a{
 }
 
 i:hover{
-    color: black;
+    color: black8;
 }
-
 #containerMain:hover{
     background-color: rgba(0, 0, 0, 0.7);
     transition: 1s;
     border: 1px solid white;
     width: 240px;
 }
-#courseHours{
+#container-main{
     width: 220px;
     position: absolute;
     right: 500px;
@@ -68,7 +57,7 @@ i:hover{
     overflow: hidden;
 }
 
-#courseHours:hover{
+#container-main:hover{
     background-color: rgba(0, 0, 0, 0.7);
     transition: 1s;
     border: 1px solid white;
@@ -77,7 +66,6 @@ i:hover{
     text-align: left;
     overflow: scroll;
 }
-
 #container-main2:hover{
     background-color: rgba(0, 0, 0, 0.7);
     transition: 1s;
@@ -88,7 +76,7 @@ i:hover{
     overflow: scroll;
 }
 
-#roomMorningShift:hover{
+#container-main3:hover{
     background-color: rgba(0, 0, 0, 0.7);
     transition: 1s;
     border: 1px solid white;
@@ -98,23 +86,13 @@ i:hover{
     overflow: scroll;
 }
 
+
 #containerMain2:hover{
-    border-left: solid 10px orange;
     transition-duration: 1s;
     background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid white;
     
 }
-
-#containerMainZz:hover{
-    border-left: solid 10px orange;
-    transition-duration: 1s;
-    background-color: rgba(0, 0, 0, 0.6);
-    border: 1px solid white;
-    
-}
-
-
 #containerMain3:hover{
     border-left: solid 10px orange;
     transition-duration: 1s;
@@ -127,36 +105,52 @@ i:hover{
 #containerMainX:hover{
     border-left: solid 10px orange;
     transition-duration: 1s;
+    /* background-color: rgba(0, 0, 0, 0.6); */
     border: 1px solid lightblue;
-    background-color: rgba(173, 216, 230, 0.22);   
+    background-color: rgba(173, 216, 230, 0.22);
+    
 }
 
 #containerMainZ:hover{
     border-left: solid 10px orange;
     transition-duration: 1s;
+    /* background-color: rgba(0, 0, 0, 0.6); */
     background-color: rgba(255, 166, 0, 0.213);
     border: 1px solid orange;
-    color: black;  
+    color: black;
+    
 }
 
 #containerMainNew:hover{
     border-left: solid 10px orange;
     transition-duration: 1s;
+    /* background-color: rgba(0, 0, 0, 0.6); */
     background-color: rgba(255, 166, 0, 0.213);
     border: 1px solid orange;
-    color: black;  
+    color: black;
+    
 }
-
 #containerMain4:hover{
     border-left: solid 10px orange;
     transition-duration: 1s;
     background-color: rgba(0, 0, 0, 0.6);
-    border: 1px solid white;   
+    border: 1px solid white;
+    
 }
 
-#containerMain5:hover{
+#containerMainCs:hover{
+    border-left: solid 10px orange;
     transition-duration: 1s;
     background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid white;
+    
+}
+#containerMain5:hover{
+    border-left: solid 10px orange;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid white;
+    
 }
 
 #containerMainF:hover{
@@ -164,13 +158,33 @@ i:hover{
     transition-duration: 1s;
     background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid white;
+    
 }
 
-#facultad-one:hover, #facultad-two:hover, #facultad-three:hover, #facultad-four:hover  {
+
+
+#facultad-one:hover{
     background-color: rgb(0, 0, 0);
     transition: 0.4s;
     transform: scale(1.1)
 }
+#facultad-two:hover{
+    background-color: rgb(0, 0, 0);
+    transition: 0.4s;
+    transform: scale(1.1)
+}
+#facultad-three:hover{
+    background-color: rgb(0, 0, 0);
+    transition: 0.4s;
+    transform: scale(1.1)
+}
+#facultad-four:hover{
+    background-color: rgb(0, 0, 0);
+    transition: 0.4s;
+    transform: scale(1.1)
+}
+
+
 
 /* FIN SECTOR HOVER */
 
@@ -179,31 +193,34 @@ i:hover{
     justify-content: center;
     margin-top: 35px;
 }
-
 .container-table{
     border: solid 1px black;
     width: 95%;
     justify-content: center;
     background-color:rgba(0,0,0,0.3);
-}
 
+}
 .table{
 
     background-color: rgba(0,0,0,0.4);
     backdrop-filter: blur(40px);
-}
+    
 
+}
 .file{
-    background-color: rgba(255, 255, 255, 0.747);
-    font-size: 19px;
-}
 
+    background-color: rgba(255, 255, 255, 0.747);
+    font-size: 19px
+
+}
 .column{
     color: black;
     font-weight: bold;
     font-size: 45px;
     border: solid 1px black;
+
 }
+
 
 /* INICIO HEADER */
 
@@ -218,13 +235,19 @@ i:hover{
 #nav {
     width: 100%;
     height: 60px;
+    /* border-radius: 25px; */
     padding: 25px;
+    margin-top: 0px;
+    display: flex;
     box-shadow: 0px 4px 4px 4px rgba(144, 144, 144, 0.7);
     background-color: var(--main-color);
+    font-family: 'Nunito', sans-serif;
     font-size: 17px;
-    display: flex;
+    justify-content: flex-end;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
+    z-index: 1;
     font-weight: bold;   
 }
 #img {
@@ -239,30 +262,45 @@ i:hover{
     list-style: none;
     margin-bottom: 0;
 }
-.lista, .lista2, .lista3{
+.lista {
     margin-left: 25px;
 }
 
-.body-sistemas{
+.lista2 {
+    margin-left: 25px;
+}
+.lista3{
+    margin-left: 25px;
+
+}
+
+/* .body-sistemas{
     height: 600px;
     zoom: 90%;
-}
+} */
+
 #body {
     /* position: relative; */
     height: 505px;
     zoom: 90%;
 }
+
 #footerContainer{
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: -40px;
+    bottom: -200px;
+
 }
 #footer {
+    /* background-color: var(--main-color); */
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 50px;
+    border-radius: 0px;
+    /* margin-top: 39%; */
     padding: 25px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -270,10 +308,14 @@ i:hover{
     border-bottom: solid 1px rgba(0,0,0,0.2);
     box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.1);
     z-index: 1;
+    font-weight: bold;
+
 }
+
 .redes {
     margin-bottom: 25px;
 }
+
 #footer2 {
     background-color: var(--main-color);
     width: 99%;
@@ -289,13 +331,14 @@ i:hover{
     box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.1);
     z-index: 1;
     font-weight: bold;
+
     position: relative;
     bottom: 0%;
     border-top: solid 1px rgba(0,0,0,0.2);
     border-bottom: solid 1px rgba(0,0,0,0.2);
 }
 
-#footer3 {
+/* #footer3 {
     background-color: var(--main-color);
     width: 99%;
     height: 50px;
@@ -315,13 +358,14 @@ i:hover{
     border-top: solid 1px rgba(0,0,0,0.2);
     border-bottom: solid 1px rgba(0,0,0,0.2);
 
-}
+} */
 
 #footer4 {
     background-color: var(--main-color);
     width: 99%;
     height: 50px;
     border-radius: 25px;
+    /* margin-top: 39%; */
     padding: 25px;
     display: flex;
     justify-content: space-around;
@@ -331,6 +375,7 @@ i:hover{
     box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.1);
     z-index: 1;
     font-weight: bold;
+
     position: relative;
     border-top: solid 1px rgba(0,0,0,0.2);
     border-bottom: solid 1px rgba(0,0,0,0.2);
@@ -346,6 +391,8 @@ i:hover{
     width: 100%;
 }
 
+
+
 #listRedes{
     list-style: none;
     display: flex;
@@ -353,9 +400,13 @@ i:hover{
     padding-top: 10px;
     }
 
- .listRedes, .listRedes2 {
+ .listRedes {
         margin: 0px 70px 0px 70px;
     }
+
+.listRedes2 {
+    margin: 0px 70px -20px 70px;
+}
 
 /* END OF THE HEADER */
 
@@ -374,6 +425,7 @@ i:hover{
     border-radius: 10px;
     height: 50px;
     font-weight: bold;
+    
 }
 
 #bar-profes{
@@ -381,13 +433,17 @@ i:hover{
     list-style: none;
     display: flex;
     justify-content: space-around;
+    
     width: 100%;
+    
+
 }
 
 #ul-profes{
     list-style: none;
     display: flex;
-    height: 100%;
+    height: 100%
+    ;
 }
 
 #li-profes{
@@ -413,20 +469,26 @@ i:hover{
         background-color:  #7BA839;
 }
 
+
+
+
 /* MAIN -------------------------------------------------------*/
 
 #main {
     display: flex;
     justify-content: center;
-    height: 495px;   
+    height: 495px;
+    
 }
 
 .main2 {
     display: flex;
     justify-content: center;
     height: 1200px;
-    color: black;
     font-size: 50px;
+
+  
+    
 }
 
 #fondoMain{
@@ -478,7 +540,7 @@ i:hover{
     padding-left: 25px;
     font-size: 17px;
 }
-#roomMorningShift {
+#container-main3 {
     width: 220px;
     position: absolute;
     right:0px;
@@ -522,7 +584,10 @@ i:hover{
     margin-top: 0px;
     position: relative;
     left: 0%;
-    margin-left: -35px;  
+    margin-left: -35px;
+    
+
+    
 }
 
 .pMain{
@@ -540,17 +605,20 @@ i:hover{
     position: fixed;
     background-position: center center;
     background-size: auto;
+
     min-width: 100%;
     min-height: 100%;
     top: 40%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: -10;
+
 }
 
-/*Pagina de Sistemas*/
+/* Pagina de Sistemas 
+    / */
 
-#fondoMain2{
+.fondoMain2{
     width: 98%;
     height: 1000px;
     border-radius: 25px;
@@ -561,65 +629,22 @@ i:hover{
     flex-wrap: wrap;
 }
 
+
 #containerMain2 {
     width: 280px;
-    height: 360px;
+    height: 400px;
     background-color: var(--main-color);
     border-radius: 25px;
-    margin-top: 0px;
-    margin-left: 25px;
-    box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.3);
-    opacity: 90%;
-    text-align: left;
-    position: absolute;
-    border-left: solid 10px white;
-    transition-duration: 1s;
-}
-
-#containerMainZz {
-    position: relative;
-    left: 20px;
-    width: 700px;
-    height: 100px;
-    background-color: var(--main-color);
-    border-radius: 0px;
-    margin-top: 20px;
-    font-size: 35px;
-    padding: 10px;
-    box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.3);
-    opacity: 90%;
-    text-align: left;
-    position: absolute;
-    border-left: solid 10px white;
-    transition-duration: 1s;
-}
-
-#form{
-    position: absolute;
-    left: 20px;
-    font-size: 40px;
     margin-top: 150px;
-    width: 500px;
-    height: 300px;
+    margin-left: -740px;
+    box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.3);
+    opacity: 90%;
+    text-align: left;
+    position: absolute;
+
+    border-left: solid 5px white;
+    transition-duration: 1s;
 }
-
-input{
-    color: black;
-}
-
-
-.asd{
-    
-    background-color: #7BA839 !important;
-    border: solid 1px rgb(82, 77, 77) !important
-    ;
-}
-
-#submit{
-    font-size: 35px;
-}
-
-
 #aulas2{
     line-height: 32px;
     margin-top: 10px;
@@ -630,28 +655,31 @@ input{
     margin-top: 7px;
 }
 
+
 #containerMain3 {
     width: 280px;
     height: 370px;
     background-color: var(--main-color);
     border-radius: 25px;
-    margin-top: 80px;
-    margin-left: 550px;
+    margin-top: 240px;
+    margin-left: -320px;
     box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.3);
     opacity: 90%;
     text-align: left;
     position: absolute;
     border-left: solid 5px white;
-    transition-duration: 1s;  
+    transition-duration: 1s;
+    
 }
 
-#containerMainX {   
+#containerMainX {
+    
     width: 280px;
     height: 370px;
     background-color: var(--main-color);
     border-radius: 25px;
-    margin-top: 80px;
-    margin-left: 860px;
+    margin-top: 240px;
+    margin-left: 0px;
     box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.3);
     opacity: 90%;
     text-align: left;
@@ -665,29 +693,32 @@ input{
     height: 370px;
     background-color: var(--main-color);
     border-radius: 25px;
-    margin-top: 80px;
-    margin-left: 1170px;
+    margin-top: 240px;
+    margin-left: 320px;
     box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.3);
     opacity: 90%;
     text-align: left;
     position: absolute;
     border-left: solid 5px white;
-    transition-duration: 1s;   
+    transition-duration: 1s;
+    
 }
+
 
 #containerMainNew {
     width: 280px;
     height: 370px;
     background-color: var(--main-color);
     border-radius: 25px;
-    margin-top: 470px;
-    margin-left: 1170px;
+    margin-top: 630px;
+    margin-left: 320px;
     box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.3);
     opacity: 90%;
     text-align: left;
     position: absolute;
     border-left: solid 5px white;
-    transition-duration: 1s;    
+    transition-duration: 1s;
+    
 }
 
 #aulasZ{
@@ -695,10 +726,12 @@ input{
     margin-top: 0px;
     font-size: 17px;
     list-style: none;
+    /* border: red 1px solid;  */
 }
 
 #pMainZ{
     margin-top: 7px;
+
 }
 
 .nashe{
@@ -725,26 +758,23 @@ input{
 #pMainX{
     margin-top: 7px;
 }
-#containerMain4 {
-    width: 280px;
-    height: 180px;
-    background-color: var(--main-color);
-    border-radius: 25px;
-    margin-top: 950px;
-    margin-left: 550px;
-    box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.3);
-    opacity: 90%;
-    text-align: left;
-    position: absolute;
-    border-left: solid 10px white;
-    transition-duration: 1s; 
-}
+
 #aulas4{
     line-height: 35px;
     margin-top: 10px;
     font-size: 17px;  
 }
+
+#aulasCs{
+    line-height: 35px;
+    margin-top: 10px;
+    font-size: 17px;  
+}
 #pMain4{
+    margin-top: 7px;
+}
+
+#pMainCs{
     margin-top: 7px;
 }
 #containerMainF {
@@ -760,11 +790,14 @@ input{
     position: absolute;
     border-left: solid 10px white;
     transition-duration: 1s;
+    
 }
 #aulasF{
     line-height: 35px;
     margin-top: 10px;
     font-size: 17px;
+    
+
 }
 
 #pMainF{
@@ -773,41 +806,47 @@ input{
 
 #containerMain5 {
     width: 280px;
-    height: 400px;
+    height: 410px;
     background-color: var(--main-color);
     border-radius: 25px;
-    margin-top: 390px;
-    margin-left: 25px;
+    margin-top: 590px;
+    margin-left: -740px;
     box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.3);
     opacity: 90%;
     text-align: left;
     position: absolute;
     border-left: solid 10px white;
-    transition-duration: 1s;  
+    transition-duration: 1s;
+    
 }
 #aulas5{
     line-height: 35px;
     margin-top: 10px;
     font-size: 17px;
+    
+
 }
 
 #pMain5{
     margin-top: 7px;
 }
 
-#containerMainC {
-    width: 950px;
-    height: 850px;
+/* Square About "regularidades" */
+.containerMainC {
+    width: 990px;
+    height: 870px;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 25px;
-    margin-top: 0px;
-    margin-left: 525px;
+    margin-top: 150px;
+    margin-left: -350px;
     box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.3);
     opacity: 90%;
     text-align: left;
     position: absolute;
     border-left: solid 1px white;
-    transition-duration: 1s;  
+   
+    transition-duration: 1s;
+    
 }
 
 #pMainC{
@@ -815,22 +854,25 @@ input{
     font-size: 30px;
     font-weight: bold;
     padding-left: 25px;
+    /* margin-left: 25px; */
     border-bottom: solid 1px white;
+
 }
 
+
+/* Square about "Equivalencias */
 #containerMainE {
-    width: 950px;
+    width: 990px;
     height: 300px;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 25px;
-    margin-top: 860px;
-    margin-left: 525px;
+    margin-top: 1050px;
+    margin-left: -350px;
     box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.3);
     opacity: 90%;
     text-align: left;
     position: absolute;
-    border-left: solid 1px white;
-    transition-duration: 1s;  
+    border-left: solid 1px white;   
 }
 
 #pMainE{
@@ -841,22 +883,62 @@ input{
     border-bottom: solid 1px white;
 }
 
+#asdasd{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+#containerMain4 {
+    width: 290px;
+    height: 180px;
+    background-color: var(--main-color);
+    border-radius: 25px;
+    margin-top: 1130px;
+    margin-left: -320px;
+    box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.3);
+    opacity: 90%;
+    text-align: left;
+    position: absolute;
+    border-left: solid 10px white;
+    transition-duration: 1s; 
+}
+
+#containerMainCs {
+    width: 290px;
+    height: 180px;
+    background-color: var(--main-color);
+    border-radius: 25px;
+    margin-top: 1130px;
+    margin-left: 0px;
+    box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.3);
+    opacity: 90%;
+    text-align: left;
+    position: absolute;
+    border-left: solid 10px white;
+    transition-duration: 1s; 
+}
+
+
 /* facultades */
 
 #facultades-container {
     width: 98%;
     height: 500px;
+    /* border: solid 2px black; */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.144);
+
 }
 
 .facultades {
     width: 235px;
     height: 100px;
     border: solid 1px black;
+    /* margin: 20px; */
     border-radius: 15px;
     text-align: center;
     display: flex;
@@ -869,21 +951,23 @@ input{
     justify-content: center;
 }
 
-#facultad-one, #facultad-two, #facultad-three, #facultad-four {
+#facultad-one {
+    background-color: orange;
     transition: 0.4s;
     backdrop-filter: blur(4px);
 }
-#facultad-one{
-    background-color: orange; 
-}
 #facultad-two {
-    background-color: cornflowerblue;  
+    background-color: cornflowerblue;
+    transition: 0.4s;
 }
 #facultad-three {
     background-color: darkorchid;
+    transition: 0.4s;
 }
 #facultad-four {
     background-color:rgba(212, 200, 30, 1 );
+    transition: 0.4s;
+    backdrop-filter: blur(60px);
 }
 .link-uno {
     width: 300px;
@@ -891,6 +975,8 @@ input{
     background-color: black;
 }
 
+
+/* Ver bien esto */
 @media (min-width: 1500px){
     .facultades{
      width: 300px;
@@ -921,6 +1007,33 @@ input{
     
 }
 
+#carouselExampleIndicators{
+    margin-right: 100px;
+    width: 800px;
+    height: auto;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+}
+
+/* .carousel{
+    margin-right: 100px;
+    width: 800px;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.slide{
+    margin-right: 100px;
+    width: 800px;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+} */
+
+
+
+
+
 /* BARRAS DE PROGRESo */
 
 #bar {
@@ -946,6 +1059,7 @@ input{
     position: relative;
     left: 40%;
     top: -25px;
+    /* box-shadow: 2px solid black; */
     border: solid 2px white;
     width: 385px;
     padding: 5px;
@@ -953,6 +1067,7 @@ input{
 }
 
 .progress{
+
     display:flex;
     position: relative;
     left: 20px;
@@ -964,7 +1079,7 @@ input{
     border: solid 1px white;
 }
 
-#texto{
+#texto {
     display: flex;
     position: absolute;
     right: 100px;
@@ -984,6 +1099,7 @@ input{
     transition: 1s;
     border: 2px #7BA839 solid;
     border-right: 15px #7BA839 solid;
+    
 }
 
 #texto2 {
@@ -999,6 +1115,23 @@ input{
     flex-direction: column;
     color: var(--main-color);
     background-color: var(--main-color);
+}
+
+#texto2:hover{
+    color: black;
+    transition: 1s;
+    border: 2px white solid;
+    border-right: 15px white solid;
+    
+}
+
+#tittle:hover{
+    background-color:rgba(255, 255, 255, 0.7);
+    color: black;
+    transition: 1s;
+    border: 2px #7BA839 solid;
+    border-right: 15px #7BA839 solid;
+    width: 420px;
 }
 
 .carrera {
@@ -1028,6 +1161,7 @@ h6{
     left: 25px;
     border-radius: 18px;
     border: solid 2px rgba(0,0,0,0.5)
+
 }
 
 .F{
@@ -1035,7 +1169,8 @@ h6{
 }
 
 .G{
-     margin-bottom: 28px; 
+     margin-bottom: 28px;
+    
 }
 
 #up{
@@ -1044,7 +1179,8 @@ h6{
     justify-content: center;
     align-items: flex-end;
     margin-top: 250px;
-    font-size: 17px;    
+    font-size: 17px;
+    
 }
 
 #preMedicas{
@@ -1061,6 +1197,7 @@ h6{
     background-color: white;
     padding: 5px;
     transition: 1s;
+
 }
 
 #preMedicas:hover{
@@ -1084,6 +1221,7 @@ h6{
     background-color: white;
     padding: 5px;
     transition: 1s;
+
 }
 
 .rivadavia:hover{
@@ -1093,18 +1231,26 @@ h6{
     border: white 2px solid;
 }
 
+
 /* Alumnos */
+
 .mainUNO{
     height: 1220px;
     background-color: rgba(0, 0, 0, 0.7);
 }
+
+/* #body-one{
+    height: 1200px;
+} */
+
 .listOne {
-    height: 1100px;
-    width: 700px;
-    border:white solid 2px;
-    border-radius: 20px;
-    margin-top: 30px;
-    }
+height: 1100px;
+width: 700px;
+border:white solid 2px;
+border-radius: 20px;
+margin-top: 30px;
+}
+
 .listTwo {
     height: 1100px;
     width: 800px;
@@ -1113,6 +1259,7 @@ h6{
     margin-top: 30px;
     margin-left: 90px;
     }
+
 .containerOne{
     display: flex;
     justify-content: center;
@@ -1139,7 +1286,9 @@ h6{
     border-left: 5px solid white;
 }
 .carta:hover{
-    border-left: 15px solid white;  
+    
+    border-left: 15px solid white;
+    
 }
 
 .documentos{
@@ -1162,12 +1311,15 @@ h6{
     border-left: 15px solid white;
 }
 
+
+
 .imgUno{
     position: absolute;
     height: auto;
     top: 105px;
     right: 100px;
-    margin-top: 30px; 
+    margin-top: 30px;
+    
 }
 
 .imgDos{
@@ -1175,7 +1327,9 @@ h6{
     height: auto;
     top: 105px;
     right: 120px;
-    margin-top: 30px;   
+    margin-top: 30px;
+
+    
 }
 
 .foto-perfil{
@@ -1184,6 +1338,7 @@ h6{
     box-shadow: rgba(255, 255, 255, 0.1) 0px 5px 5px 0px;
     border: white solid 1px;
 }
+
 
 /* Buscador ALumnos */
 
@@ -1206,7 +1361,23 @@ h6{
     height: 195px;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* MEDIAS QUERYS DE PERFILES DE ALUMNOS */
+/* MEDIAS QUERYS DE PERFILES DE ALUMNOS */
+/* MEDIAS QUERYS DE PERFILES DE ALUMNOS */
+/* MEDIAS QUERYS DE PERFILES DE ALUMNOS */
+/* MEDIAS QUERYS DE PERFILES DE ALUMNOS */
+
+
 @media (max-width: 1150px){
     .foto-perfil{
         border-radius: 150px;
@@ -1220,7 +1391,8 @@ h6{
         left: 800px;
         top: 95px;
         right: 50px;
-        margin-top: 30px;  
+        margin-top: 30px;
+        
     }
 
     .imgDos{
@@ -1229,6 +1401,7 @@ h6{
         top: 95px;
         right: 50px;
         margin-top: 30px;
+        
     }
 
     .documentos{
@@ -1308,6 +1481,7 @@ h6{
         top: 95px;
         right: 50px;
         margin-top: 30px;
+        
     }
 
     .imgDos{
@@ -1315,7 +1489,8 @@ h6{
         left: 850px;
         top: 95px;
         right: 50px;
-        margin-top: 30px;  
+        margin-top: 30px;
+        
     }
 
     .documentos{
@@ -1394,7 +1569,8 @@ h6{
         left: 890px;
         top: 95px;
         right: 50px;
-        margin-top: 30px; 
+        margin-top: 30px;
+        
     }
 
     .imgDos{
@@ -1402,7 +1578,8 @@ h6{
         left: 890px;
         top: 95px;
         right: 50px;
-        margin-top: 30px; 
+        margin-top: 30px;
+        
     }
 
     .documentos{
@@ -1465,6 +1642,7 @@ h6{
             bottom: -850px;
             width: 100%;
         }
+    
 }
 
 @media (min-width: 1300px) and (max-width: 1340px) {
@@ -1480,7 +1658,8 @@ h6{
         left: 955px;
         top: 95px;
         right: 50px;
-        margin-top: 30px;  
+        margin-top: 30px;
+        
     }
 
     .imgDos{
@@ -1488,7 +1667,8 @@ h6{
         left: 955px;
         top: 95px;
         right: 50px;
-        margin-top: 30px;  
+        margin-top: 30px;
+        
     }
 
     .documentos{
@@ -1541,6 +1721,7 @@ h6{
             margin-top: 30px;
             position: absolute;
             left: -65px;
+            
             }
 
         #footerContainer2{
@@ -1550,6 +1731,7 @@ h6{
             bottom: -850px;
             width: 100%;
         }
+    
 }
 
 @media (min-width: 1340px) and (max-width: 1465px) {
@@ -1566,6 +1748,7 @@ h6{
         top: 95px;
         right: 50px;
         margin-top: 30px;
+        
     }
 
     .imgDos{
@@ -1574,6 +1757,7 @@ h6{
         top: 95px;
         right: 50px;
         margin-top: 30px;
+        
     }
 
     .documentos{
@@ -1626,6 +1810,7 @@ h6{
             margin-top: 30px;
             position: absolute;
             left: -65px;
+            
             }
 
         #footerContainer2{
@@ -1642,11 +1827,103 @@ h6{
 
     .imgDos{
         position: absolute;
+        /* left: 1000px; */
         top: 95px;
+        /* left: 1215px; */
         margin-top: 30px;
-        right: 40px;   
+        right: 40px;
+
+        
     }
+
+
+
 }
+
+/* @media (min-width: 1465px) and (max-width: 1535px) {
+
+
+.foto-perfil{
+        border-radius: 150px;
+        width: 190px;
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 5px 5px 0px;
+        border: white solid 1px;
+    }
+
+    .imgUno{
+        position: absolute;
+        left: 915px;
+        top: 95px;
+        right: 50px;
+        margin-top: 30px;
+        
+    }
+
+    .documentos{
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        left: 870px;
+        font-size: 20px;
+        background-color: var(--main-color);
+        padding: 15px 0px 0px 25px;
+        line-height: 45px;
+        border-radius: 20px;
+        border: 1px solid white;
+        margin-top: 670px;
+        transition: 1s;
+        border-left: 4px solid white;
+    }
+
+    .carta{
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        left: 870px;
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 15px 0px 0px 25px;
+        line-height: 45px;
+        border-radius: 20px;
+        border: 1px solid white;
+        margin-top: 240px;
+        transition: 1s;
+        border-left: 4px solid white;
+    }
+    
+    .listOne {
+        height: 1100px;
+        width: 700px;
+        border:white solid 2px;
+        border-radius: 20px;
+        margin-top: 30px;
+        position: absolute;
+        left: 20px;
+        }
+
+        .listTwo {
+            height: 1100px;
+            width: 800px;
+            border:white solid 2px;
+            border-radius: 20px;
+            margin-top: 30px;
+            position: absolute;
+            left: 20px;
+            }
+
+        #footerContainer2{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: -850px;
+            width: 100%;
+        }
+
+    } */
+
+
+
+/* PRUEBA */
 
 .main-box.no-header {
     padding-top: 20px;
@@ -1662,16 +1939,21 @@ h6{
     -webikt-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+    /* backdrop-filter: blur(4px); */
     backdrop-filter: blur(4px);
 }
 
 .container{
     height: 1500px;
+
+
 }
 
 .container-dos {
     height: 800px;
 }
+
+
 
 .table a.table-link.danger {
     color: #e74c3c;
@@ -1727,7 +2009,10 @@ text-decoration:none;
     border: 1px solid white;
     padding: 1px;
     width: 1vw;
+
 }
+
+
 
 @media (max-width: 561px){
 
@@ -1748,6 +2033,8 @@ text-decoration:none;
             box-sizing: border-box;
             z-index: 1;
             font-weight: bold;   
+        
+
     }
 
     #lista{
@@ -1766,6 +2053,8 @@ text-decoration:none;
         position: relative;
         top: 160px;
         transition: 1s;
+
+
     }
 
     .lista{
@@ -1778,7 +2067,6 @@ text-decoration:none;
     .lista2{
         border: solid 1px chocolate;
     }
-
     #container-main3{
         display: none;
     }
@@ -1789,11 +2077,10 @@ text-decoration:none;
     #footer{
         position: relative;
         bottom: -150px;
+
     }
 
-    #listRedes{
-        /* display: none; */
-    }
+
 
     .listRedes {
         position: relative;
@@ -1812,12 +2099,14 @@ text-decoration:none;
         position: fixed;
         background-position: center center;
         background-size: auto;
+    
         min-width: 100%;
         min-height: 100%;
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
-        z-index: -10;  
+        z-index: -10;
+    
     }
 
     #containerMain {
@@ -1835,6 +2124,7 @@ text-decoration:none;
         border-left: solid 5px #fafafa;
         transition-duration: 0s;
         overflow: hidden;
+        
     }
 
     #containerMain:hover{
@@ -1849,7 +2139,7 @@ text-decoration:none;
         padding-right: 10px;
     }
 
-    #courseHours{
+    #container-main{
         width: 220px;
         height: 50px;
         background-color: var(--main-color);
@@ -1863,10 +2153,11 @@ text-decoration:none;
         left: 10px;
         border-left: solid 5px #fafafa;
         transition-duration: 0s;
-        overflow: hidden;    
+        overflow: hidden;
+        
     }
     
-    #courseHours:hover{
+    #container-main:hover{
         background-color: rgba(0, 0, 0, 0.7);
         transition: 0.5s;
         border: 1px solid white;
@@ -1881,6 +2172,13 @@ text-decoration:none;
 
     #fondoMain{
         width: 100%;
+        /* height: 500px; */
+        /* border-radius: 25px; */
+        /* display: flex; */
+        /* justify-content: flex-end;
+        justify-content: space-between;
+        margin-top: -4px;
+        position: relative; */
     }
 
     .hdc{
@@ -1888,11 +2186,15 @@ text-decoration:none;
         font-size: 22px;
         padding-top: 8px;
         margin-left: 10px;
+    
         height: 40px;
         left: -24px;
         width: 230px;
-        border-bottom: solid 2px rgb(255, 255, 255);
+    border-bottom: solid 2px rgb(255, 255, 255);
+
     }
+
+
 
     .aulas{
         list-style: none;
@@ -1900,8 +2202,12 @@ text-decoration:none;
         margin-top: 18px;
         position: relative;
         left: 0%;
-        margin-left: 120px;   
+        margin-left: 120px;
+        
+    
+        
     }
+
 
     .liMateria{
         border: solid 1px rgba(255, 255, 255, 0.412);
